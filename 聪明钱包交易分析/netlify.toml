@@ -1,0 +1,12 @@
+[build]
+  command = "cd web_app/frontend && npm install && npm run build"
+  publish = "web_app/frontend/dist"
+
+[build.environment]
+  VITE_API_BASE_URL = "https://your-backend-domain.com"
+
+[[redirects]]
+  from = "/api/*"
+  to = "https://your-backend-domain.com/api/:splat"
+  status = 200
+  force = true

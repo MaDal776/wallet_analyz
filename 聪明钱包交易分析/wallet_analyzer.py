@@ -42,7 +42,6 @@ class WalletAnalyzer:
             "sortBy": "TIMESTAMP",
             "sortDirection": "DESC",
             "limit": 499,
-            # "market": "0xad72ce59f81accd122cb9422930f8a6b2b881441c0563e7404da4f26707b546d",
             "offset": 0
         }
         if start is not None:
